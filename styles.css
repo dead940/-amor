@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #E6C1FF;
+    background-image: url('corazones.png'); /* Imagen de corazones como fondo */
+    background-size: contain;
+}
+
+h1 {
+    color: #A20A0A;
+    font-size: 28px;
+}
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin-top: 20px;
+}
+
+#reference {
+    text-align: center;
+}
+
+#reference h2 {
+    color: #A20A0A;
+}
+
+#reference-img {
+    width: 400px;
+    height: 400px;
+    border: 3px solid #A20A0A;
+    border-radius: 10px;
+}
+
+#puzzle-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 2px;
+    width: 406px;
+    height: 406px;
+    position: relative;
+    border: 3px solid #A20A0A;
+    background-color: white;
+}
+
+.piece {
+    width: 100px;
+    height: 100px;
+    background-size: 400px 400px;
+    position: absolute;
+    cursor: grab;
+}
+
